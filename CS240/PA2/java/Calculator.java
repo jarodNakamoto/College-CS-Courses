@@ -33,8 +33,10 @@ import java.util.Scanner;
 import java.text.DecimalFormat;
 
 public class Calculator {
-
 // TODO (Student): your fields here
+
+  Stack <Double> numbers;
+  Stack <Character> operator;
 
   //Constructor
   public Calculator() {
@@ -89,8 +91,17 @@ public class Calculator {
   *   @return the answer
   */
   public double calc(double operand1, double operand2, char operator) {
-    // TODO (Student)
-    return 0; // fix this
+    // checks the operator    
+
+    switch(operator){
+       case '*': return operand1 * operand2;
+       case '/': return operand1/operand2;
+       case '+': return operand1 + operand2;
+       case '-': return operand1 - operand2;
+       default: break;
+    }
+    // not an operator
+    return 0;
   }
 
   /** Solves an infix equation and returns the answer as a Double. Limits to 3
@@ -99,7 +110,19 @@ public class Calculator {
   *   @return double answer to equation
   */
   public Double solve(String equation) {
-    // TODO (Student)
-    return null; // fix this
+    // will become the answer
+    double answer = 0.0;
+
+     //do Math
+
+     for(int i = 0; i < equation.length(); i++)
+     {
+        // find operator
+   
+     }
+
+    //return formatted answer
+    DecimalFormat format = new DecimalFormat("#.###");
+    return Double.parseDouble(formatter.format(answer));
   }
 }
