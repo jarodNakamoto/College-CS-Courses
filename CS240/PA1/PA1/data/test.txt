@@ -1,0 +1,458 @@
+TESTCASE 1
+print =
+TESTCASE 2
+insert 0 10
+insert 0 23
+insert 2 1
+print = 23 10 1
+TESTCASE 3
+append 15
+append 24
+append 20
+append 9
+append 7
+append 18
+append 17
+append 21
+append 6
+print = 15 24 20 9 7 18 17 21 6
+TESTCASE 4
+prepend 14
+prepend 3
+prepend 15
+print = 15 3 14
+TESTCASE 5
+append 5
+append 26
+append 21
+deleteElemAt 0
+deleteElemAt 0
+print = 21
+TESTCASE 6
+append 17
+append 6
+append 28
+append 24
+append 16
+append 2
+append 5
+append 21
+append 14
+findElem 17 = 0
+findElem 16 = 4
+findElem 2 = 5
+findElem 21 = 7
+findElem 5 = 6
+findElem 6 = 1
+findElem 24 = 3
+findElem 28 = 2
+findElem 14 = 8
+print = 17 6 28 24 16 2 5 21 14
+TESTCASE 7
+append 9
+append 29
+append 24
+append 1
+append 23
+append 20
+append 28
+append 14
+append 18
+append 12
+readElemAt 5 = 20
+readElemAt 0 = 9
+readElemAt 0 = 9
+readElemAt 1 = 29
+readElemAt 0 = 9
+readElemAt 0 = 9
+readElemAt 0 = 9
+readElemAt 0 = 9
+print = 9 29 24 1 23 20 28 14 18 12
+TESTCASE 8
+print =
+TESTCASE 9
+insert 0 21
+insert 0 8
+insert 1 3
+insert 1 5
+insert 3 11
+insert 4 9
+insert 6 24
+insert 6 14
+insert 7 1
+print = 8 5 3 11 9 21 14 1 24
+TESTCASE 10
+append 20
+append 26
+print = 20 26
+TESTCASE 11
+prepend 8
+prepend 24
+prepend 7
+prepend 13
+prepend 29
+print = 29 13 7 24 8
+TESTCASE 12
+append 0
+append 8
+append 28
+append 14
+append 20
+append 16
+deleteElemAt 0
+deleteElemAt 0
+deleteElemAt 0
+deleteElemAt 0
+print = 20 16
+TESTCASE 13
+append 24
+findElem 24 = 0
+print = 24
+TESTCASE 14
+append 10
+append 15
+append 25
+append 29
+append 2
+append 8
+append 20
+append 28
+append 23
+append 19
+readElemAt 0 = 10
+print = 10 15 25 29 2 8 20 28 23 19
+TESTCASE 15
+print =
+TESTCASE 16
+insert 0 14
+insert 1 20
+insert 2 13
+insert 2 22
+print = 14 20 22 13
+TESTCASE 17
+append 25
+append 22
+append 4
+append 24
+append 19
+append 20
+append 6
+append 15
+print = 25 22 4 24 19 20 6 15
+TESTCASE 18
+prepend 10
+prepend 0
+prepend 12
+prepend 27
+print = 27 12 0 10
+TESTCASE 19
+append 28
+append 19
+append 0
+append 9
+append 8
+append 22
+append 12
+deleteElemAt 1
+deleteElemAt 5
+deleteElemAt 2
+deleteElemAt 2
+deleteElemAt 2
+deleteElemAt 0
+deleteElemAt 0
+print =
+TESTCASE 20
+append 23
+append 20
+append 16
+append 29
+findElem 16 = 2
+findElem 20 = 1
+findElem 23 = 0
+findElem 29 = 3
+print = 23 20 16 29
+TESTCASE 21
+append 22
+readElemAt 0 = 22
+print = 22
+TESTCASE 22
+print =
+TESTCASE 23
+insert 0 7
+insert 1 11
+print = 7 11
+TESTCASE 24
+append 1
+append 5
+append 20
+append 4
+append 19
+print = 1 5 20 4 19
+TESTCASE 25
+prepend 14
+prepend 11
+prepend 2
+prepend 19
+prepend 17
+prepend 16
+print = 16 17 19 2 11 14
+TESTCASE 26
+append 14
+append 28
+append 10
+append 7
+append 26
+append 24
+append 27
+deleteElemAt 3
+deleteElemAt 2
+deleteElemAt 0
+deleteElemAt 2
+deleteElemAt 1
+deleteElemAt 0
+print = 27
+TESTCASE 27
+append 15
+append 21
+append 11
+append 7
+append 24
+append 16
+append 10
+append 18
+findElem 16 = 5
+findElem 18 = 7
+findElem 21 = 1
+findElem 7 = 3
+findElem 24 = 4
+findElem 10 = 6
+findElem 11 = 2
+findElem 15 = 0
+print = 15 21 11 7 24 16 10 18
+TESTCASE 28
+append 25
+readElemAt 0 = 25
+print = 25
+TESTCASE 29
+print =
+TESTCASE 30
+insert 0 4
+insert 1 5
+insert 1 28
+insert 1 8
+insert 0 19
+print = 19 4 8 28 5
+TESTCASE 31
+append 0
+append 1
+append 6
+append 12
+append 27
+append 24
+append 11
+append 13
+append 29
+print = 0 1 6 12 27 24 11 13 29
+TESTCASE 32
+prepend 15
+prepend 8
+print = 8 15
+TESTCASE 33
+append 27
+append 26
+append 14
+deleteElemAt 0
+deleteElemAt 0
+print = 14
+TESTCASE 34
+append 7
+append 19
+append 14
+append 4
+append 11
+append 15
+append 29
+append 10
+findElem 19 = 1
+findElem 4 = 3
+findElem 7 = 0
+findElem 10 = 7
+findElem 11 = 4
+findElem 29 = 6
+findElem 14 = 2
+findElem 15 = 5
+print = 7 19 14 4 11 15 29 10
+TESTCASE 35
+append 1
+append 15
+append 0
+append 22
+append 9
+append 6
+readElemAt 4 = 9
+readElemAt 1 = 15
+readElemAt 2 = 0
+readElemAt 2 = 0
+readElemAt 0 = 1
+readElemAt 0 = 1
+print = 1 15 0 22 9 6
+TESTCASE 36
+print =
+TESTCASE 37
+insert 0 26
+print = 26
+TESTCASE 38
+append 15
+append 25
+append 2
+append 29
+append 19
+append 10
+append 14
+append 28
+append 3
+append 24
+print = 15 25 2 29 19 10 14 28 3 24
+TESTCASE 39
+prepend 3
+prepend 22
+prepend 15
+prepend 24
+prepend 28
+prepend 14
+prepend 5
+prepend 12
+prepend 4
+prepend 18
+print = 18 4 12 5 14 28 24 15 22 3
+TESTCASE 40
+append 4
+append 29
+append 26
+append 22
+append 24
+append 12
+append 18
+append 15
+append 11
+deleteElemAt 7
+deleteElemAt 2
+deleteElemAt 3
+deleteElemAt 0
+deleteElemAt 2
+deleteElemAt 1
+deleteElemAt 1
+deleteElemAt 0
+print = 11
+TESTCASE 41
+append 8
+append 24
+append 27
+append 1
+append 9
+append 10
+append 7
+append 12
+append 16
+findElem 16 = 8
+findElem 1 = 3
+findElem 7 = 6
+findElem 8 = 0
+findElem 9 = 4
+findElem 24 = 1
+findElem 10 = 5
+findElem 27 = 2
+findElem 12 = 7
+print = 8 24 27 1 9 10 7 12 16
+TESTCASE 42
+append 8
+append 19
+append 20
+append 7
+append 18
+append 17
+append 4
+append 11
+append 0
+readElemAt 4 = 18
+readElemAt 2 = 20
+readElemAt 4 = 18
+readElemAt 5 = 17
+readElemAt 2 = 20
+readElemAt 0 = 8
+readElemAt 0 = 8
+readElemAt 0 = 8
+readElemAt 0 = 8
+print = 8 19 20 7 18 17 4 11 0
+TESTCASE 43
+print =
+TESTCASE 44
+insert 0 2
+insert 0 5
+print = 5 2
+TESTCASE 45
+append 7
+append 10
+append 20
+append 25
+append 13
+append 9
+append 1
+append 3
+print = 7 10 20 25 13 9 1 3
+TESTCASE 46
+prepend 23
+prepend 27
+prepend 14
+prepend 26
+prepend 21
+prepend 1
+prepend 10
+prepend 28
+prepend 7
+print = 7 28 10 1 21 26 14 27 23
+TESTCASE 47
+append 9
+append 21
+append 23
+deleteElemAt 0
+print = 21 23
+TESTCASE 48
+append 5
+append 1
+append 8
+append 15
+findElem 1 = 1
+findElem 5 = 0
+findElem 8 = 2
+findElem 15 = 3
+print = 5 1 8 15
+TESTCASE 49
+append 7
+append 18
+append 9
+append 8
+append 4
+append 24
+append 14
+append 25
+append 0
+readElemAt 3 = 8
+readElemAt 3 = 8
+readElemAt 3 = 8
+readElemAt 2 = 9
+readElemAt 0 = 7
+readElemAt 0 = 7
+print = 7 18 9 8 4 24 14 25 0
+TESTCASE 50
+append 4
+append 6
+append 18
+append 28
+append 25
+append 1
+append 16
+deleteElemAt 1
+deleteElemAt 1
+deleteElemAt 0
+print = 28 25 1 16
