@@ -1,0 +1,236 @@
+Messages
+=========================
+Memory and registers cleared and the simulator reinitialized.
+
+SPIM Version Version 7.3 of August 26, 2006
+Copyright 1990-2004 by James R. Larus (larus@cs.wisc.edu).
+All Rights Reserved.
+DOS and Windows ports by David A. Carley (dac@cs.wisc.edu).
+Copyright 1997 by Morgan Kaufmann Publishers, Inc.
+See the file README for a full copyright notice.
+Load terminated. Check code and simulator settings and try again.
+Memory and registers cleared and the simulator reinitialized.
+
+SPIM Version Version 7.3 of August 26, 2006
+Copyright 1990-2004 by James R. Larus (larus@cs.wisc.edu).
+All Rights Reserved.
+DOS and Windows ports by David A. Carley (dac@cs.wisc.edu).
+Copyright 1997 by Morgan Kaufmann Publishers, Inc.
+See the file README for a full copyright notice.
+Memory and registers cleared and the simulator reinitialized.
+
+SPIM Version Version 7.3 of August 26, 2006
+Copyright 1990-2004 by James R. Larus (larus@cs.wisc.edu).
+All Rights Reserved.
+DOS and Windows ports by David A. Carley (dac@cs.wisc.edu).
+Copyright 1997 by Morgan Kaufmann Publishers, Inc.
+See the file README for a full copyright notice.
+Z:\College-CS-Courses\CS264\lab1.s successfully loaded
+Exception occurred at PC=0x00400020
+  Unaligned address in store: 0x10010012
+Attempt to execute non-instruction at 0x80000180
+Memory and registers cleared and the simulator reinitialized.
+
+SPIM Version Version 7.3 of August 26, 2006
+Copyright 1990-2004 by James R. Larus (larus@cs.wisc.edu).
+All Rights Reserved.
+DOS and Windows ports by David A. Carley (dac@cs.wisc.edu).
+Copyright 1997 by Morgan Kaufmann Publishers, Inc.
+See the file README for a full copyright notice.
+Z:\College-CS-Courses\CS264\lab1.s successfully loaded
+[0x00400000]        0x34080014  ori $8, $0, 20                  ; 11: li $t0, 20                                        #counter var to 20
+[0x00400004]        0x3c011001  lui $1, 4097 [array]            ; 12: la $t1, array              #load array address into $t1
+[0x00400008]        0x34290012  ori $9, $1, 18 [array]
+[0x0040000c]        0x3c041001  lui $4, 4097 [prompt]           ; 16: la $a0, prompt                            #load prompt into $a0
+[0x00400010]        0x34020004  ori $2, $0, 4                   ; 17: li $v0, 4                  #print ascii
+[0x00400014]        0x0000000c  syscall                         ; 18: syscall
+[0x00400018]        0x34020005  ori $2, $0, 5                   ; 19: li $v0,5                                        #load int
+[0x0040001c]        0x0000000c  syscall                         ; 20: syscall
+[0x00400020]        0xad220000  sw $2, 0($9)                    ; 21: sw $v0, 0($t1)                                #save from v0 to array
+Exception occurred at PC=0x00400020
+  Unaligned address in store: 0x10010012
+Attempt to execute non-instruction at 0x80000180
+Memory and registers cleared and the simulator reinitialized.
+
+SPIM Version Version 7.3 of August 26, 2006
+Copyright 1990-2004 by James R. Larus (larus@cs.wisc.edu).
+All Rights Reserved.
+DOS and Windows ports by David A. Carley (dac@cs.wisc.edu).
+Copyright 1997 by Morgan Kaufmann Publishers, Inc.
+See the file README for a full copyright notice.
+Z:\College-CS-Courses\CS264\lab1.s successfully loaded
+[0x00400000]        0x34080014  ori $8, $0, 20                  ; 11: li $t0, 20                                        #counter var to 20
+[0x00400004]        0x3c011001  lui $1, 4097 [array]            ; 12: la $t1, array              #load array address into $t1
+[0x00400008]        0x34290012  ori $9, $1, 18 [array]
+[0x0040000c]        0x3c041001  lui $4, 4097 [prompt]           ; 16: la $a0, prompt                            #load prompt into $a0
+[0x00400010]        0x34020004  ori $2, $0, 4                   ; 17: li $v0, 4                  #print ascii
+[0x00400014]        0x0000000c  syscall                         ; 18: syscall
+[0x00400018]        0x34020005  ori $2, $0, 5                   ; 19: li $v0,5                                        #load int
+[0x0040001c]        0x0000000c  syscall                         ; 20: syscall
+[0x00400020]        0xad220000  sw $2, 0($9)                    ; 21: sw $v0, 0($t1)                                #save from v0 to array
+Exception occurred at PC=0x00400020
+  Unaligned address in store: 0x10010012
+Attempt to execute non-instruction at 0x80000180
+Memory and registers cleared and the simulator reinitialized.
+
+SPIM Version Version 7.3 of August 26, 2006
+Copyright 1990-2004 by James R. Larus (larus@cs.wisc.edu).
+All Rights Reserved.
+DOS and Windows ports by David A. Carley (dac@cs.wisc.edu).
+Copyright 1997 by Morgan Kaufmann Publishers, Inc.
+See the file README for a full copyright notice.
+Z:\College-CS-Courses\CS264\lab1.s successfully loaded
+[0x00400000]        0x34080014  ori $8, $0, 20                  ; 11: li $t0, 20                                        #counter var to 20
+[0x00400004]        0x3c011001  lui $1, 4097 [array]            ; 12: la $t1, array              #load array address into $t1
+[0x00400008]        0x34290012  ori $9, $1, 18 [array]
+[0x0040000c]        0x3c041001  lui $4, 4097 [prompt]           ; 16: la $a0, prompt                            #load prompt into $a0
+[0x00400010]        0x34020004  ori $2, $0, 4                   ; 17: li $v0, 4                  #print ascii
+[0x00400014]        0x0000000c  syscall                         ; 18: syscall
+[0x00400018]        0x34020005  ori $2, $0, 5                   ; 19: li $v0,5                                        #load int
+[0x0040001c]        0x0000000c  syscall                         ; 20: syscall
+[0x00400020]        0xad220000  sw $2, 0($9)                    ; 21: sw $v0, 0($t1)                                #save from v0 to array
+Exception occurred at PC=0x00400020
+  Unaligned address in store: 0x10010012
+Memory and registers cleared and the simulator reinitialized.
+
+SPIM Version Version 7.3 of August 26, 2006
+Copyright 1990-2004 by James R. Larus (larus@cs.wisc.edu).
+All Rights Reserved.
+DOS and Windows ports by David A. Carley (dac@cs.wisc.edu).
+Copyright 1997 by Morgan Kaufmann Publishers, Inc.
+See the file README for a full copyright notice.
+Z:\College-CS-Courses\CS264\lab1.s successfully loaded
+Exception occurred at PC=0x00400020
+  Unaligned address in store: 0x10010019
+Attempt to execute non-instruction at 0x80000180
+Memory and registers cleared and the simulator reinitialized.
+
+SPIM Version Version 7.3 of August 26, 2006
+Copyright 1990-2004 by James R. Larus (larus@cs.wisc.edu).
+All Rights Reserved.
+DOS and Windows ports by David A. Carley (dac@cs.wisc.edu).
+Copyright 1997 by Morgan Kaufmann Publishers, Inc.
+See the file README for a full copyright notice.
+Z:\College-CS-Courses\CS264\lab1.s successfully loaded
+[0x00400000]        0x34080014  ori $8, $0, 20                  ; 12: li $t0, 20                                        #counter var to 20
+[0x00400004]        0x3c011001  lui $1, 4097 [array]            ; 13: la $a1, array              #load array address into $a1
+[0x00400008]        0x34250019  ori $5, $1, 25 [array]
+[0x0040000c]        0x3c041001  lui $4, 4097 [prompt]           ; 17: la $a0, prompt                            #load prompt into $a0
+[0x00400010]        0x34020004  ori $2, $0, 4                   ; 18: li $v0, 4                  #print ascii
+[0x00400014]        0x0000000c  syscall                         ; 19: syscall
+[0x00400018]        0x34020005  ori $2, $0, 5                   ; 20: li $v0,5                                        #load int
+[0x0040001c]        0x0000000c  syscall                         ; 21: syscall
+[0x00400020]        0xaca20000  sw $2, 0($5)                    ; 22: sw $v0, 0($a1)                                #save from v0 to array
+Exception occurred at PC=0x00400020
+  Unaligned address in store: 0x10010019
+Attempt to execute non-instruction at 0x80000180
+
+
+Registers
+=========================
+ PC      = 00000000   EPC     = 00400020   Cause   = 00000014   BadVAddr= 10010019
+ Status  = 3000ff12   HI      = 00000000   LO      = 00000000
+                                 General Registers
+R0  (r0) = 00000000  R8  (t0) = 00000014  R16 (s0) = 00000000  R24 (t8) = 00000000
+R1  (at) = 10010000  R9  (t1) = 00000000  R17 (s1) = 00000000  R25 (t9) = 00000000
+R2  (v0) = 00000007  R10 (t2) = 00000000  R18 (s2) = 00000000  R26 (k0) = 00000000
+R3  (v1) = 00000000  R11 (t3) = 00000000  R19 (s3) = 00000000  R27 (k1) = 00000000
+R4  (a0) = 10010000  R12 (t4) = 00000000  R20 (s4) = 00000000  R28 (gp) = 10008000
+R5  (a1) = 10010019  R13 (t5) = 00000000  R21 (s5) = 00000000  R29 (sp) = 7fffef38
+R6  (a2) = 7fffef40  R14 (t6) = 00000000  R22 (s6) = 00000000  R30 (s8) = 00000000
+R7  (a3) = 00000000  R15 (t7) = 00000000  R23 (s7) = 00000000  R31 (ra) = 00000000
+
+ FIR    = 00009800    FCSR    = 00000000    FCCR   = 00000000   FEXR    = 00000000
+ FENR   = 00000000
+                              Double Floating Point Registers
+FP0  = 0.000000      FP8  = 0.000000      FP16 = 0.000000      FP24 = 0.000000     
+FP2  = 0.000000      FP10 = 0.000000      FP18 = 0.000000      FP26 = 0.000000     
+FP4  = 0.000000      FP12 = 0.000000      FP20 = 0.000000      FP28 = 0.000000     
+FP6  = 0.000000      FP14 = 0.000000      FP22 = 0.000000      FP30 = 0.000000     
+                              Single Floating Point Registers
+FP0  = 0.000000      FP8  = 0.000000      FP16 = 0.000000      FP24 = 0.000000     
+FP1  = 0.000000      FP9  = 0.000000      FP17 = 0.000000      FP25 = 0.000000     
+FP2  = 0.000000      FP10 = 0.000000      FP18 = 0.000000      FP26 = 0.000000     
+FP3  = 0.000000      FP11 = 0.000000      FP19 = 0.000000      FP27 = 0.000000     
+FP4  = 0.000000      FP12 = 0.000000      FP20 = 0.000000      FP28 = 0.000000     
+FP5  = 0.000000      FP13 = 0.000000      FP21 = 0.000000      FP29 = 0.000000     
+FP6  = 0.000000      FP14 = 0.000000      FP22 = 0.000000      FP30 = 0.000000     
+FP7  = 0.000000      FP15 = 0.000000      FP23 = 0.000000      FP31 = 0.000000     
+
+
+Console
+=========================
+Input Integer7
+
+
+Text Segment
+=========================
+[0x00400000]        0x34080014  ori $8, $0, 20                  ; 12: li $t0, 20                                        #counter var to 20
+[0x00400004]        0x3c011001  lui $1, 4097 [array]            ; 13: la $a1, array              #load array address into $a1
+[0x00400008]        0x34250019  ori $5, $1, 25 [array]
+[0x0040000c]        0x3c041001  lui $4, 4097 [prompt]           ; 17: la $a0, prompt                            #load prompt into $a0
+[0x00400010]        0x34020004  ori $2, $0, 4                   ; 18: li $v0, 4                  #print ascii
+[0x00400014]        0x0000000c  syscall                         ; 19: syscall
+[0x00400018]        0x34020005  ori $2, $0, 5                   ; 20: li $v0,5                                        #load int
+[0x0040001c]        0x0000000c  syscall                         ; 21: syscall
+[0x00400020]        0xaca20000  sw $2, 0($5)                    ; 22: sw $v0, 0($a1)                                #save from v0 to array
+[0x00400024]        0x2108ffff  addi $8, $8, -1                 ; 23: add $t0,$t0,-1             #decrement counter var
+[0x00400028]        0x20a50004  addi $5, $5, 4                  ; 24: add $a1,$a1,4              #increment to next space in array
+[0x0040002c]        0x1d00fff8  bgtz $8 -32 [loopl-0x0040002c]  ; 25: bgtz $t0,loopl                                #if $t0 > 0, loop back to loopl
+[0x00400030]        0x34080014  ori $8, $0, 20                  ; 29: li $t0,20                                        #load counter var to 20
+[0x00400034]        0x3c011001  lui $1, 4097 [array]            ; 30: la $a1,array                                #load array address to a1
+[0x00400038]        0x34250019  ori $5, $1, 25 [array]
+[0x0040003c]        0x00052021  addu $4, $0, $5                 ; 34: move $a0,$a1                                #load int from a1 to a0(from right to left)
+[0x00400040]        0x34020001  ori $2, $0, 1                   ; 35: li $v0,1                                        #print int
+[0x00400044]        0x0000000c  syscall                         ; 36: syscall
+[0x00400048]        0x3c011001  lui $1, 4097 [newLine]          ; 37: la $a0,newLine             #load newLine
+[0x0040004c]        0x34240015  ori $4, $1, 21 [newLine]
+[0x00400050]        0x34020004  ori $2, $0, 4                   ; 38: li $v0,4                                        #print ascii
+[0x00400054]        0x0000000c  syscall                         ; 39: syscall
+[0x00400058]        0x2108ffff  addi $8, $8, -1                 ; 40: add $t0,$t0,-1                                #decrement counter var
+[0x0040005c]        0x20a50004  addi $5, $5, 4                  ; 41: add $a1,$a1,4                                #move to next spot in array
+[0x00400060]        0x1d00fff7  bgtz $8 -36 [looppl-0x00400060] ; 42: bgtz $t0,looppl                        #loop back to looppl
+[0x00400064]        0x34080014  ori $8, $0, 20                  ; 47: li $t0,20                                        #load counter var to 20
+[0x00400068]        0x3c011001  lui $1, 4097 [array]            ; 48: la $a1,array                                #load array address to a1
+[0x0040006c]        0x34250019  ori $5, $1, 25 [array]
+[0x00400070]        0x00052021  addu $4, $0, $5                 ; 52: move $a0,$a1                                #load int from a1 to a0(from right to left)
+[0x00400074]        0x34020001  ori $2, $0, 1                   ; 53: li $v0,1                                        #print int
+[0x00400078]        0x0000000c  syscall                         ; 54: syscall
+[0x0040007c]        0x3c011001  lui $1, 4097 [aspace]           ; 55: la $a0,aspace              #load newLine
+[0x00400080]        0x34240017  ori $4, $1, 23 [aspace]
+[0x00400084]        0x34020004  ori $2, $0, 4                   ; 56: li $v0,4                                        #print ascii
+[0x00400088]        0x0000000c  syscall                         ; 57: syscall
+[0x0040008c]        0x2108ffff  addi $8, $8, -1                 ; 58: add $t0,$t0,-1                                #decrement counter var
+[0x00400090]        0x20a50004  addi $5, $5, 4                  ; 59: add $a1,$a1,4                                #move to next spot in array
+[0x00400094]        0x1d00fff7  bgtz $8 -36 [loopsc-0x00400094] ; 60: bgtz $t0,loopsc                        #loop back to loopsc
+
+        KERNEL
+
+
+Data Segment
+=========================
+        DATA
+[0x10000000]...[0x10010000]        0x00000000
+[0x10010000]                        0x75706e49  0x6e492074  0x65676574  0x6c700072
+[0x10010010]                        0x65736165  0x20000a00  0x00000000  0x00000000
+[0x10010020]...[0x10040000]        0x00000000
+
+        STACK
+[0x7fffef38]                        0x00000000  0x00000000
+[0x7fffef40]                        0x7fffefde  0x7fffefb0  0x7fffef84  0x7fffef58
+[0x7fffef50]                        0x7fffef4b  0x7fffef14  0x7fffeed8  0x7fffeea7
+[0x7fffef60]                        0x7fffee8b  0x7fffee67  0x7fffee53  0x7fffee46
+[0x7fffef70]                        0x7fffee3b  0x7fffee11  0x7fffede5  0x7fffedb6
+[0x7fffef80]                        0x7fffeda0  0x7fffed89  0x7fffed7b  0x7fffeac2
+[0x7fffef90]                        0x7fffea80  0x7fffea65  0x7fffea48  0x7fffea00
+[0x7fffefa0]                        0x7fffe9ee  0x7fffe9d6  0x7fffe9bb  0x7fffe997
+[0x7fffefb0]                        0x7fffe96e  0x7fffe950  0x7fffe90f  0x7fffe8f8
+[0x7fffefc0]                        0x7fffe8e4  0x7fffe8d5  0x7fffe8bf  0x7fffe895
+[0x7fffefd0]                        0x7fffe86c  0x7fffe84c  0x7fffe83d  0x7fffe829
+[0x7fffefe0]                        0x7fffe809  0x7fffe7d3  0x7fffe781  0x7fffe74a
+[0x7fffeff0]                        0x7fffe738  0x00000000  0x61746144  0x00000000
+
+        KERNEL DATA
+[0x90000000]...[0x90010000]        0x00000000
+
+

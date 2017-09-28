@@ -1,0 +1,22 @@
+#BlueJ class context
+comment0.params=
+comment0.target=LinkedList()
+comment1.params=elem
+comment1.target=void\ append(java.lang.Object)
+comment2.params=elem
+comment2.target=void\ prepend(java.lang.Object)
+comment3.params=index\ elem
+comment3.target=void\ insert(int,\ java.lang.Object)
+comment4.params=i
+comment4.target=void\ deleteElemAt(int)
+comment5.params=elem
+comment5.target=int\ findElem(java.lang.Object)
+comment6.params=i
+comment6.target=java.lang.Object\ readElemAt(int)
+comment7.params=
+comment7.target=java.lang.String\ toString()
+comment8.params=index
+comment8.target=LinkedList.Node\ fastForward(int)
+comment9.params=
+comment9.target=int\ size()
+numComments=10

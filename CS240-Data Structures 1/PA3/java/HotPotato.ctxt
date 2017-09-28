@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.params=
+comment0.target=HotPotato()
+comment1.params=names\ num
+comment1.target=java.lang.String\ play(Queue,\ int)
+comment1.text=\ Simulating\ HotPotato\ game.\r\n\ \ @param\ names\ Takes\ names\ of\ players\r\n\ \ @param\ num\ \ \ number\ of\ times\ the\ potato\ is\ passed\r\n\ \ @return\ the\ name\ of\ the\ winner\r\n
+numComments=2
