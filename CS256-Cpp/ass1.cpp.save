@@ -1,0 +1,23 @@
+#include <iostream>
+
+using namespace std;
+
+void printTop();
+void print(int[][] cards, bool[][] fd);
+void generateGame();
+
+int main()
+{
+    cout << "Memory Matching Game" << endl << endl;
+
+    int pairsFound = 0;
+
+    int[][] cards =;
+    bool[][] found = ;
+
+    while(pairsFound < 8)
+    {
+       //print out the game board
+       print(cards, found);
+    }
+}

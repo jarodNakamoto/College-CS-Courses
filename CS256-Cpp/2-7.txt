@@ -1,0 +1,24 @@
+// Example program
+#include <iostream>
+#include <string>
+#include <fstream>
+
+using namespace std;
+using namespace outstream;
+using namespace instream;
+
+int main()
+{
+    instream infile;
+    infile.open("input.txt");
+    ofstream out;
+    out.open("output.txt");
+    
+    string line;
+    while(getline(infile,line))
+    {
+        out << in << endl;
+    }
+    out.close();
+    infile.close();
+}

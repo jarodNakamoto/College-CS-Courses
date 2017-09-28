@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Queue()
+comment1.params=element
+comment1.target=void\ enqueue(java.lang.Object)
+comment1.text=\ Puts\ the\ parameter\ into\ the\ back\ of\ the\ queue.\r\n\ \ \ @param\ element\ The\ element\ to\ be\ inserted\ into\ the\ queue.\r\n
+comment2.params=
+comment2.target=java.lang.Object\ peek()
+comment2.text=\ Returns\ the\ first\ element\ of\ queue\ without\ removing\ it;\ if\ not\ found\ return\r\n\ \ \ null.\r\n\ \ \ @return\ elem\ at\ head\ of\ the\ queue.\r\n
+comment3.params=
+comment3.target=java.lang.Object\ dequeue()
+comment3.text=\ Takes\ the\ first\ element\ out\ of\ the\ queue\ and\ returns\ it.\r\n\ \ \ @return\ elem\ at\ head\ of\ the\ queue.\r\n
+comment4.params=
+comment4.target=java.lang.String\ toString()
+comment4.text=\ Returns\ a\ string\ representation\ of\ the\ queue.\r\n\ \ \ @return\ The\ string\ representation\ of\ the\ queue.\r\n
+comment5.params=
+comment5.target=int\ size()
+comment5.text=\ Returns\ the\ size\ of\ the\ queue.\r\n\ \ \ @return\ The\ size\ of\ the\ queue.\r\n
+numComments=6
