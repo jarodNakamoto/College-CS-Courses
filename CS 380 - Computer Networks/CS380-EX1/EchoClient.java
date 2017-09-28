@@ -15,8 +15,6 @@ public final class EchoClient {
             InputStreamReader isr = new InputStreamReader(is, "UTF-8");
 			//recieves messages
             BufferedReader br = new BufferedReader(isr);
-			//prints message to console
-            //System.out.println(br.readLine());
 			
 			//my changes start here
 			//sends stuff to server
@@ -27,8 +25,6 @@ public final class EchoClient {
 			//User input messages
 			Scanner sc = new Scanner(System.in);
 			String input = "";
-			
-			//System.out.println("B4 do while");
 			
 			do
 			{	
@@ -51,8 +47,6 @@ public final class EchoClient {
 				//receive server message
 				System.out.println("Server> " + br.readLine());
 			}while(!input.equalsIgnoreCase("exit"));
-			
-			//System.out.println("After do while");
         }
     }
 }
