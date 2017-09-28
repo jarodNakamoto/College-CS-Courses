@@ -21,8 +21,7 @@ public final class EchoServer {
 					System.out.printf("Client connected: %s%n", address);
 					
 					//creates the runnable for client
-					//new RequestHandler(socket);
-					//Random random = new Random();
+					Random random = new Random();
 					try{
 						//message receivers
 						InputStream is = socket.getInputStream();
@@ -41,14 +40,12 @@ public final class EchoServer {
 								socket.close();
 							else
 								out.println(msg);
-							/*
 							try{
-								Thread.sleep(1000);
 								//Thread.sleep(random.nextInt(1000));
 							}
-							catch(InterruptedException e){
+							catch(Exception e){
 								return;
-							}*/		
+							}
 						}
 						//prints to console client left
 						System.out.printf("Client disconnected: %s%n", address);
@@ -57,9 +54,8 @@ public final class EchoServer {
 					{
 						System.out.println(e.toString());
 					}
-				
-				
-                };try (ServerSocket serverSocket = new ServerSocket(22222)) {
+                };
+			try (ServerSocket serverSocket = new ServerSocket(22222)) {
 			//server runs indefinitely
             while (true) {
 				//establish connection
@@ -73,10 +69,8 @@ public final class EchoServer {
 				//creates thread objects to execute Runnable
 				//starts threads. Main thread countinues
 				Thread client1 = new Thread(clientHandler);
-				//Thread client2 = new Thread(clientHandler);
 				client1.start();
-				//client2.start();
-				//Thread.sleep(1000);
+				Thread.sleep(1000);
             }
 			
 					
