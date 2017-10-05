@@ -23,7 +23,6 @@ public final class ChatClient {
 				InputStream is = socket.getInputStream();
 				InputStreamReader isr = new InputStreamReader(is, "UTF-8");
 				BufferedReader br = new BufferedReader(isr);
-				//System.out.println("After Initializations");
 				
 				//receive server message
 				String str;
@@ -51,7 +50,6 @@ public final class ChatClient {
 				{
 					System.out.println("Socket failed to close");
 				}
-				//System.out.println("Socket: " + socket.toString()+socket.isConnected()+socket.isClosed());
 				return;
 			}	
 		};
@@ -72,7 +70,6 @@ public final class ChatClient {
 				while(!socket.isClosed())
 				{
 					//get user input
-					//System.out.println("Sender Thread still running");
 					input = sc.nextLine();
 					//stop if they type exit
 					if(input.equalsIgnoreCase("exit"))
