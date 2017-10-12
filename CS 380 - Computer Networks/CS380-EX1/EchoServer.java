@@ -40,7 +40,7 @@ public final class EchoServer {
 						System.out.println(e.toString());
 					}
                 };
-			try (ServerSocket serverSocket = new ServerSocket(22222)) {
+		try (ServerSocket serverSocket = new ServerSocket(22222)) {
             while (true) {
 				try {
 					socket = serverSocket.accept();

@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.target=SingleChoiceQuestion
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ SingleChoiceQuestion\ here.\r\n\r\n\ @author\ (your\ name)\r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=question\ answer
+comment1.target=SingleChoiceQuestion(java.lang.String,\ java.lang.String)
+comment2.params=
+comment2.target=java.lang.String\ getAnswer()
+comment3.params=
+comment3.target=java.lang.String\ getQuestion()
+comment4.params=response
+comment4.target=boolean\ isCorrect(java.lang.String)
+numComments=5

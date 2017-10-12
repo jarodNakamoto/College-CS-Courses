@@ -25,13 +25,32 @@ public final class ChatClient {
 				BufferedReader br = new BufferedReader(isr);
 				
 				//receive server message
-				System.out.println(""+br.readLine());
-				
-				Thread.sleep(random.nextInt(THREAD_SLEEP));
+				String str;
+				while(true)
+				{
+					str = br.readLine();
+					//stops thread if receives null from server
+					if(str.equals(null))
+					{
+						System.out.println("Disconnected from server");
+						return;
+					}
+					//prints server message to console
+					System.out.println(str);
+					Thread.sleep(random.nextInt(THREAD_SLEEP));
+				}
 			}
 			catch(Exception e)
 			{
-				System.out.println(e.toString());
+				System.out.println("Receiver Thread: " + e.toString());
+				try{
+					socket.close();
+				}
+				catch(Exception er)
+				{
+					System.out.println("Socket failed to close");
+				}
+				return;
 			}	
 		};
 		
@@ -48,24 +67,26 @@ public final class ChatClient {
 				Scanner sc = new Scanner(System.in);
 				String input = "";
 				
-				//client
-				//get user input
-				input = sc.nextLine();
-				//stop if they type exit
-				if(input.equalsIgnoreCase("exit"))
+				while(!socket.isClosed())
 				{
-					out.println("exit");
-					socket.close();
-					Thread.sleep(100 * THREAD_SLEEP);
+					//get user input
+					input = sc.nextLine();
+					//stop if they type exit
+					if(input.equalsIgnoreCase("exit"))
+					{
+						socket.close();
+						return;
+					}
+					
+					//send to server
+					out.println(input);
+					Thread.sleep(random.nextInt(THREAD_SLEEP));
 				}
-				
-				//send to server
-				out.println(input);
-				Thread.sleep(random.nextInt(THREAD_SLEEP));
 			}
 			catch(Exception e)
 			{
-				System.out.println(e.toString());
+				System.out.println("Sender Thread: " + e.toString());
+				return;
 			}	
 		};
 		
@@ -76,23 +97,14 @@ public final class ChatClient {
 			//connect to the server
 			socket = new Socket("18.221.102.182", 38001);
 			Thread messageReceiver = new Thread(MessageHandler);
-			Thread messageSender = new Thread(MessageSender);		
+			Thread messageSender = new Thread(MessageSender);
+			
 			messageSender.start();
 			messageReceiver.start();
-			Random random = new Random();
-				
-			while(true)
-			{
-				Thread.sleep(random.nextInt(THREAD_SLEEP));
-				//System.out.println("test");
-				messageSender.run();
-				messageReceiver.run();
-				
-			}
 		}
 		catch(Exception e)
 		{
-			System.out.println(e.toString());
+			System.out.println("Main Thread: " + e.toString());
 		}
     }
 }
