@@ -35,15 +35,8 @@ public final class Ex2Client {
 				}
 				int halfByte1 = is.read();
 				int halfByte2 = is.read();
-				
-				//System.out.println("hB1: " + String.format("%02X", halfByte1));
-				//System.out.println("hB2: " + String.format("%02X", halfByte2));
-				
 				halfByte1 = halfByte1 << 4;
 				bytesTranslated[i] = (byte)(halfByte1 ^ halfByte2);
-				
-				//System.out.println("byte: " + String.format("%02X", bytesTranslated[i])+"\n");
-				
 				System.out.print(String.format("%02X", bytesTranslated[i]));
 			}
 			
@@ -55,26 +48,11 @@ public final class Ex2Client {
 			byte[] crcValBytes = new byte[4];
 			Integer copy = new Integer(crcVal.intValue());
 			
-			
-			//
-			//System.out.println("copy: " + copy);
-			//System.out.println();
-			//System.out.println(String.format("%08X", crcVal));
-			//System.out.println();
-			//
-			
 			//take the long and make it into four bytes
 			for(int i = 3; i >= 0; i--)
 			{	
 				crcValBytes[i] = copy.byteValue();
-				//
-				//System.out.print(String.format("%02X",crcValBytes[i]));
-				//System.out.print("    ");
-				//
 				copy = copy >> 8;
-				//
-				//System.out.println("copy: " + String.format("%02X",copy));
-				//
 			}
 			
 			System.out.println("\nGenerated CRC32: " + String.format("%08X", crcVal.intValue()) +".");
