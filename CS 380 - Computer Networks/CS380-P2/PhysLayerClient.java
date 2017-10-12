@@ -16,7 +16,6 @@ public final class PhysLayerClient {
 	public static int fiveBToFourB(int fiveB)
 	{
 		int fourB;
-		//System.out.println(String.format("0x%04X",fiveB));
 		if((fiveB ^ 0x1E) == 0)
 			fourB = 0x0;
 		else if((fiveB ^ 0x009) == 0)
@@ -136,9 +135,6 @@ public final class PhysLayerClient {
 				System.out.println("\nResponse good");
 			else
 				System.out.println("\nResponse bad");
-			//
-			//System.out.println(response);
-			//
 			System.out.println("Disconnected from server.");
 			is.close();
         }
