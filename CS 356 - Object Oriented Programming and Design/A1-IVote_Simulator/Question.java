@@ -5,7 +5,7 @@
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class Question implements QuestionInterface
+public abstract class Question implements QuestionInterface
 {
     // instance variables
     private String question;
@@ -31,4 +31,6 @@ public class Question implements QuestionInterface
     {
         this.answerSet = answerSet;
     }
+    
+    public abstract boolean isMultiAnswer();
 }

@@ -2,12 +2,14 @@
 comment0.params=numStudents\ answerSet
 comment0.target=StudentHandler(int,\ java.lang.String[])
 comment0.text=\r\n\ Constructor\ for\ objects\ of\ class\ StudentHandler\r\n
-comment1.params=
-comment1.target=void\ generateStudents()
+comment1.params=multiAnswer
+comment1.target=void\ generateStudents(boolean)
 comment2.params=iVote
 comment2.target=void\ submitToIVote(IVoteService)
 comment3.params=iVote\ id
 comment3.target=java.lang.String\ changeAnswer(IVoteService,\ int)
 comment4.params=
 comment4.target=java.lang.String\ generateAnswer()
-numComments=5
+comment5.params=
+comment5.target=java.lang.String\ generateMultiAnswer()
+numComments=6

@@ -4,4 +4,9 @@ public class MultipleChoiceQuestion extends Question implements QuestionInterfac
     {
         super(question, answerSet);
     }
+    
+    public boolean isMultiAnswer()
+    {
+        return true;
+    }
 }

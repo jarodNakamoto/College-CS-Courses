@@ -14,11 +14,21 @@ public class StudentHandler
     }
 
     //fills the array of students with an answer
-    public void generateStudents()
+    public void generateStudents(boolean multiAnswer)
     {
-        for(int i = 0; i < roster.length; i++)
+        if(multiAnswer)
         {
-            roster[i] = new Student(i+"", generateAnswer());
+            for(int i = 0; i < roster.length; i++)
+            {
+                roster[i] = new Student(i+"", generateMultiAnswer());
+            }
+        }
+        else
+        {
+            for(int i = 0; i < roster.length; i++)
+            {
+                roster[i] = new Student(i+"", generateAnswer());
+            }
         }
     }
     
@@ -52,5 +62,29 @@ public class StudentHandler
     public String generateAnswer()
     {
         return answerSet[(int)(Math.random()*answerSet.length)];
+    }
+    
+    //pick a random set of answers
+    public String generateMultiAnswer()
+    {
+        int numAnswers = ((int)(Math.random()*answerSet.length))+1;
+        
+        String answer = generateAnswer();
+        
+        for(int i = 1; i < numAnswers; i++)
+        {
+            String str = generateAnswer();
+            //picked a duplicate answer
+            if(answer.indexOf(str) != -1)
+            {
+                i--;
+            }
+            else
+            {
+                answer += ";" + str;
+            }
+        }
+        
+        return answer;
     }
 }

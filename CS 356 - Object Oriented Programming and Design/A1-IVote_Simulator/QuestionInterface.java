@@ -5,4 +5,6 @@ public interface QuestionInterface
     public String[] getAnswerSet();
     
     public void setAnswerSet(String[] answerSet);
+    
+    public boolean isMultiAnswer();
 }

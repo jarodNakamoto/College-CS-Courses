@@ -38,30 +38,45 @@ public class IVoteService implements IVoteServiceInterface
     public void receiveAnswer(String id, String answer)
     {
         String previousAnswer = studentResponses.get(id);
-        //
-        //System.out.println("id: " + id + " answer: " + answer);
-        //
         
         //if student has answered before
+        
+        //System.out.println("previous student answer: " + previousAnswer);
         if(previousAnswer != null)
         {
             //remove previous answer from maps
             studentResponses.remove(id);
-            //decrement the count of the previous answer
-            int prevCount = answerToCountMap.get(previousAnswer).intValue();
-            prevCount--;
-            answerToCountMap.put(previousAnswer, new Integer(prevCount));
+            //decrement the count of all the previous answers
+            splitAnswerAndUpdateCount(previousAnswer, -1);
+            
             System.out.println("id: " + id + " answer: " + answer);
             System.out.println("previous answer: " + previousAnswer);
         }
         
         //add student response to maps
-        int count = answerToCountMap.get(answer).intValue();
-        count++;
+        //System.out.println("id: " + id + " answer: " + answer);
+        splitAnswerAndUpdateCount(answer, 1);
         studentResponses.put(id, answer);
-        answerToCountMap.put(answer, new Integer(count));
         
         //System.out.println("after ans count: " + count + "\n");
+    }
+    
+    private void splitAnswerAndUpdateCount(String ans, int delta)
+    {
+        //should split it into multiple answers if there is more than one
+        String[] answerSet = ans.split(";");
+        for(int i = 0; i < answerSet.length; i++)
+        {
+            //if not empty string
+            if(!answerSet[i].equals(""))
+            {
+                int count = answerToCountMap.get(answerSet[i]).intValue();
+                //System.out.println("b4: " + count);
+                count += delta;
+                //System.out.println("after: " + count);
+                answerToCountMap.put(answerSet[i], new Integer(count));
+            }
+        }
     }
     
     //receive an array of students and an array of their answers

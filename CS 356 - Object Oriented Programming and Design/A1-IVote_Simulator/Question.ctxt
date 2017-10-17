@@ -7,4 +7,6 @@ comment2.params=
 comment2.target=java.lang.String\ getQuestion()
 comment3.params=answerSet
 comment3.target=void\ setAnswerSet(java.lang.String[])
-numComments=4
+comment4.params=
+comment4.target=boolean\ isMultiAnswer()
+numComments=5

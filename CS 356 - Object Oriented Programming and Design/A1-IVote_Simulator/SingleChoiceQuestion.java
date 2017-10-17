@@ -11,4 +11,9 @@ public class SingleChoiceQuestion extends Question implements QuestionInterface
     {
         super(question, answerSet);
     }
+    
+    public boolean isMultiAnswer()
+    {
+        return false;
+    }
 }
