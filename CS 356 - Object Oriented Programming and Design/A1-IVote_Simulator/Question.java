@@ -1,8 +1,34 @@
-public interface Question
+
+/**
+ * Write a description of class Question here.
+ * 
+ * @author (your name) 
+ * @version (a version number or a date)
+ */
+public class Question implements QuestionInterface
 {
-    public String getAnswer();
+    // instance variables
+    private String question;
+    private String[] answerSet;
     
-    public String getQuestion();
+    public Question(String question, String[] answerSet)
+    {
+        // initialise instance variables
+        this.question = question;
+        this.answerSet = answerSet;
+    }
     
-    public boolean isCorrect(String response);
+    public String[] getAnswerSet()
+    {
+        return answerSet;
+    }
+    public String getQuestion()
+    {
+        return question;
+    }
+    
+    public void setAnswerSet(String[] answerSet)
+    {
+        this.answerSet = answerSet;
+    }
 }

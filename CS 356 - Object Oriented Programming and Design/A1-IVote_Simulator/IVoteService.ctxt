@@ -1,7 +1,12 @@
 #BlueJ class context
-comment0.target=IVoteService
-comment1.params=
-comment1.target=IVoteService()
-comment2.params=
-comment2.target=void\ output()
-numComments=3
+comment0.params=
+comment0.target=IVoteService()
+comment1.params=question
+comment1.target=void\ setQuestion(Question)
+comment2.params=id\ answer
+comment2.target=void\ receiveAnswer(java.lang.String,\ java.lang.String)
+comment3.params=ids\ answers
+comment3.target=void\ receiveAnswers(java.lang.String[],\ java.lang.String[])
+comment4.params=
+comment4.target=void\ output()
+numComments=5

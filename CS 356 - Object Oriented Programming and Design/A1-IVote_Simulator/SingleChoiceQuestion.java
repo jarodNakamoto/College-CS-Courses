@@ -5,31 +5,10 @@
  * @author (your name)
  * @version (a version number or a date)
  */
-public class SingleChoiceQuestion implements Question
+public class SingleChoiceQuestion extends Question implements QuestionInterface
 {
-    // instance variables - replace the example below with your own
-    private String question;
-    private String answer;
-    
-    public SingleChoiceQuestion(String question, String answer)
+    public SingleChoiceQuestion(String question, String[] answerSet)
     {
-        // initialise instance variables
-        this.question = question;
-        this.answer = answer;
-    }
-
-    
-    public String getAnswer()
-    {
-        return answer;
-    }
-    public String getQuestion()
-    {
-        return question;
-    }
-    
-    public boolean isCorrect(String response)
-    {
-        return answer.equals(response);
+        super(question, answerSet);
     }
 }
