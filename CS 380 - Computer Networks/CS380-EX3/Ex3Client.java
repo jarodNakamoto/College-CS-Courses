@@ -1,13 +1,7 @@
 
 import java.io.InputStream;
-import java.io.BufferedReader;
-import java.io.InputStreamReader;
 import java.io.OutputStream;
-import java.io.PrintStream;
 import java.net.Socket;
-import java.util.Scanner;
-import java.util.Random;
-import java.io.IOException;
 
 public final class Ex3Client {
 
@@ -54,9 +48,6 @@ public final class Ex3Client {
 			//take the value and make it into two bytes
 			for(int i = byteArr.length-1; i >= 0; i--){	
 				byteArr[i] = copy.byteValue();
-				//
-				//System.out.println("byte " + i + " " + String.format("0x%02X", byteArr[i]));
-				//
 				copy = copy >> 8;
 			}
 			
@@ -75,7 +66,6 @@ public final class Ex3Client {
 				System.out.println("Response good");
 			else
 				System.out.println("Response bad");
-			//System.out.println(rec);
 			System.out.println("Disconnected from server.");
 			is.close();
         }
