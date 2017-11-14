@@ -6,7 +6,7 @@ public class Ipv4Client {
 
   public static void main(String[] args) throws Exception {
     try {
-      Socket socket = new Socket("18.221.102.182", 38005);
+      Socket socket = new Socket("18.221.102.182", 38003);
       System.out.println("Connected to server.");
 
       InputStream is = socket.getInputStream();
@@ -14,7 +14,8 @@ public class Ipv4Client {
       BufferedReader br = new BufferedReader(isr);
 	  
       OutputStream os = socket.getOutputStream();
-      for(int i = 2; i <= Math.pow(2,12); i*=2) {
+      //for(int i = 2; i <= Math.pow(2,12); i*=2) { 
+	    int i =4;
         System.out.println("Data length: " + i);
 		int size = 20+i;
         byte[] header = new byte[size];
@@ -59,8 +60,8 @@ public class Ipv4Client {
 		header[11] = 0;
 		
         //sourceaddr: implement using IP address of choice
-		//134.71.249.45
-		String sourceAddr = "10000110010001111111100100101101";
+		//192.168.56.1
+		String sourceAddr = "11000000101010000011100000000001";
 		int srcAddr = (new BigInteger(sourceAddr, 2)).intValue();
 		splitAndAddToByteArr(srcAddr, 4, header, 12);
 		
@@ -81,22 +82,24 @@ public class Ipv4Client {
 		
 		for(int j = 0; j < header.length; j++){
 				os.write(header[j]);
-				//System.out.println(String.format("0x%02X", header[j]));
+				System.out.println(String.format("0x%02X", header[j]));
 		}
 		
         String response = br.readLine();
         System.out.println(response);
+		/*
         if(!response.equals("good")) {
           break;
         }
+		*/
 		System.out.println();
-      }
+      //}
     } catch (IOException e) {
       e.printStackTrace();
     }
   }
 
-  private static short checksum(byte[] b) {
+  private static short checksum(byte[] b, int length) {
     //if the array length is odd
     if((b.length % 2) != 0) {
       byte[] bOdd = new byte[b.length+1];
