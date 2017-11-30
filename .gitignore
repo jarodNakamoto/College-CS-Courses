@@ -3,3 +3,4 @@ node_modules
 .tmp
 builds/development/images/**
 package.bluej
+.class
